@@ -131,5 +131,6 @@ $ip="47.93.97.127";
       if(preg_match('/http/i', $ipaddr) || $ipaddr == '') {   
         $ipaddr = 'Unknown';   
       }   
-      return $ipaddr;   
+      //return $ipaddr;  
+	  return iconv('gbk', 'utf-8', $ipaddr); 	  
     }  
